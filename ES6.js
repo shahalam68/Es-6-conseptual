@@ -59,5 +59,24 @@ const fullName = `${firstName} ${lastName} ${value }`;
 
 /* Spread operator */
 const mostan = ['Josef', 'Bangla bhai','Ershad Sikdar','Sweden aslam'];
-console.log(...mostan);
-console.log(mostan);
+// console.log(...mostan);
+// console.log(mostan);
+
+
+/* Object Destructuring */
+const person = {name:"komola", id: "10", age:20};
+
+
+const person ={
+    name:"komola",
+    id:"10",
+    age:20,
+    friends:{
+        name:"beguni",
+        id:"29"
+    }
+}
+const {name,id,age} = person;
+console.log(name);
+console.log(id);
+console.log(age);
